@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 13 200);
+  --color-top-bar: oklch(35.62% 0 0);
+  --color-con: oklch(32.41% 0.0098 260.71);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  scroll-behavior: smooth;
+}
+.dark {
+  text-align: justify;
+  background-color: oklch(32.41% 0.0098 260.71);
+}
